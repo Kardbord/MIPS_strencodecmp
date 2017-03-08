@@ -29,19 +29,20 @@
 	
 ### Data Declaration Section ###
 .data
-string0: .asciiz "XYZ" # Play with this string and string1 to change the output results
+string0: .asciiz "XYZza" # Play with this string and string1 to change the output results
 
 .align 2 # The '.align n' directive is a way to override the default alignment rules. 
 	 # The next field after the directive will be aligned to a multiple of 2 to the power of n where n is the .align value.
 	 # In this case, we'll align to 2^2, or four. This ensures we're aligned on a word
 	 
-string1: .asciiz "YZA" # Play with this string and string0 to change the output results
+string1: .asciiz "YZAab" # Play with this string and string0 to change the output results
 
 .align 2
 msg0: .asciiz "v0 = 0, string0 == string1 is true\n"
 
 .align 2
 msg1: .asciiz "v0 = 1, string0 == strint1 is false\n"
+
 
 ### Code Section ###
 .text
